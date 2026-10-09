@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>سياسة الخصوصية — قيراطان</title>
+<style>
+  :root { --green:#0E4034; --gold:#B08D46; --ink:#1c1c1c; --soft:#f5f3ec; }
+  * { box-sizing: border-box; }
+  body {
+    margin:0; background:var(--soft); color:var(--ink);
+    font-family: "Segoe UI", Tahoma, system-ui, sans-serif;
+    line-height:1.9; font-size:17px;
+  }
+  header { background:var(--green); color:#EFD79A; padding:28px 20px; text-align:center; }
+  header h1 { margin:0 0 6px; font-size:26px; }
+  header p { margin:0; opacity:.85; font-size:15px; }
+  main { max-width:760px; margin:0 auto; padding:24px 20px 60px; }
+  h2 { color:var(--green); margin-top:34px; font-size:21px;
+       border-bottom:2px solid var(--gold); padding-bottom:6px; }
+  table { width:100%; border-collapse:collapse; margin:16px 0; font-size:16px; }
+  th, td { border:1px solid #d8d4c4; padding:10px 12px; text-align:right; }
+  th { background:#e8e4d5; }
+  .box { background:#fff; border-right:4px solid var(--gold);
+         padding:14px 18px; margin:18px 0; border-radius:6px; }
+  a { color:var(--green); }
+  footer { text-align:center; color:#6b6b6b; font-size:14px; padding:20px; }
+  ul { padding-right:22px; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>سياسة الخصوصية</h1>
+  <p>تطبيق قيراطان — نداءات صلاة الجنازة</p>
+</header>
+
+<main>
+
+<p><strong>آخر تحديث:</strong> ٩ أكتوبر ٢٠٢٦</p>
+
+<p>
+قيراطان تطبيق يُعلمك بصلوات الجنازة القريبة منك في وقتها.
+هذه الصفحة تشرح ما نأخذه من بياناتك، ولماذا، وكيف تحذفه.
+</p>
+
+<h2>ما نأخذه ولماذا</h2>
+
+<table>
+  <tr>
+    <th>البيان</th><th>لماذا</th><th>هل يُحفظ عندنا؟</th>
+  </tr>
+  <tr>
+    <td>موقعك الجغرافي</td>
+    <td>لنعرض لك الجنازات القريبة منك ونحسب المسافة</td>
+    <td><strong>لا</strong> — يُستعمل لحظة الاستعلام ثم يُهمَل</td>
+  </tr>
+  <tr>
+    <td>بريدك الإلكتروني</td>
+    <td>لتمييز حسابك ومنع النداءات المكرّرة</td>
+    <td>نعم</td>
+  </tr>
+  <tr>
+    <td>اسمك وصورتك من حساب جوجل</td>
+    <td>لعرضهما لك في شاشة حسابك</td>
+    <td>نعم</td>
+  </tr>
+  <tr>
+    <td>ما تكتبه في النداء</td>
+    <td>اسم المسجد، وموعد الصلاة، واسم المتوفى (اختياري)</td>
+    <td>نعم — ويُحذف تلقائياً بعد ٢٤ ساعة</td>
+  </tr>
+</table>
+
+<div class="box">
+  <strong>عن موقعك تحديداً:</strong>
+  موقعك يُرسل إلى خادمنا مع كل استعلام لنحسب أي الجنازات قريبة منك،
+  لكنه <strong>لا يُحفظ في أي جدول ولا يُربط باسمك</strong>.
+  ولا نعرف أين كنت أمس ولا أين ستكون غداً.
+</div>
+
+<h2>الإشعارات — كيف تصلك دون أن نعرف مكانك</h2>
+
+<p>
+هذا أهم قرار في التطبيق. الإشعارات تصلك حسب منطقتك، ومع ذلك
+<strong>لا يعرف خادمنا من في أي منطقة</strong>.
+</p>
+
+<p>
+الطريقة: هاتفك يحسب اسم منطقته <em>بنفسه وداخل الجهاز</em>، ثم يشترك
+في قناة إشعارات بذلك الاسم لدى خدمة جوجل للإشعارات (Firebase).
+وحين يُنشر نداء، ينادي خادمنا على اسم المنطقة — لا على أحد بعينه.
+فنحن لا نملك قائمة بمن في أي مكان، ولا نرسل رقم جهازك إلى أحد.
+</p>
+
+<h2>مع من نشارك بياناتك</h2>
+
+<p><strong>لا نبيع بياناتك ولا نشاركها مع معلنين. أبداً.</strong></p>
+
+<p>ونستعين بهذه الخدمات التقنية وحدها:</p>
+<ul>
+  <li><strong>Supabase</strong> — لحفظ الحسابات والنداءات.</li>
+  <li><strong>Google Firebase</strong> — لإيصال الإشعارات إلى هاتفك. تُنشئ لهاتفك معرّف تثبيت لا يدلّ على شخصك، تصل به الإشعارات.</li>
+  <li><strong>OpenStreetMap</strong> — للخرائط. حين تفتح خريطة، يُطلب منها رسم المنطقة الظاهرة على الشاشة. وحين تنشر نداءً، يُسأل خادمها العامّ (Overpass) عن المساجد حول الدبّوس. فيصلها موقع تلك المنطقة، بلا اسمك ولا بريدك.</li>
+</ul>
+
+<h2>ما يراه الناس منك</h2>
+
+<ul>
+  <li><strong>لا يُعرض عنوان بيت العزاء</strong> — المسجد والمقبرة فقط.</li>
+  <li>اسم المتوفى اختياري، ومغلق ما لم تكتبه أنت.</li>
+  <li>لا يُعرض اسمك ولا بريدك لمن يقرأ النداء.</li>
+  <li>عدد من نوى الحضور لا يظهر كرقم إلا إذا بلغ عشرة.</li>
+</ul>
+
+<h2>كم تبقى بياناتك</h2>
+
+<ul>
+  <li><strong>النداءات:</strong> تُحذف تلقائياً بعد ٢٤ ساعة من موعد الصلاة.</li>
+  <li><strong>حسابك:</strong> يبقى حتى تحذفه أنت.</li>
+  <li><strong>رصيدك في «سباق الخير»:</strong> عددٌ فقط (كم جنازة نويت حضورها) يبقى في حسابك بعد حذف النداءات — بلا اسم مسجد ولا متوفى ولا تاريخ — ويُحذف مع حسابك.</li>
+</ul>
+
+<h2>حذف حسابك</h2>
+
+<p>
+تستطيع حذف حسابك وكل ما يخصّه في أي لحظة، من داخل التطبيق:
+<strong>القائمة ← حسابي ← حذف حسابي نهائياً</strong>.
+</p>
+
+<p>
+ويُحذف معه: نداءاتك، وتأكيداتك، ونوايا الحضور المسجّلة باسمك، وملفك
+الشخصي. الحذف فوري ولا رجعة فيه.
+</p>
+
+<p>
+ولو تعذّر عليك الوصول إلى التطبيق، اطلب الحذف من هنا:
+<a href="delete-account.html">صفحة طلب حذف الحساب</a>.
+</p>
+
+<h2>الأطفال</h2>
+
+<p>
+التطبيق ليس موجّهاً لمن هم دون ١٣ سنة، ولا نجمع بياناتهم قصداً.
+</p>
+
+<h2>تغيير هذه السياسة</h2>
+
+<p>
+إن غيّرناها، سنحدّث تاريخ «آخر تحديث» أعلى الصفحة.
+</p>
+
+<h2>للتواصل</h2>
+
+<p>
+لأي سؤال عن خصوصيتك أو لطلب حذف بياناتك:
+<br>
+<a href="mailto:hamada11112000@gmail.com">hamada11112000@gmail.com</a>
+</p>
+
+</main>
+
+<footer>قيراطان — من إصدار وقف</footer>
+
+</body>
+</html>

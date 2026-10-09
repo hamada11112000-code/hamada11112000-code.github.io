@@ -1,1 +1,8 @@
-# hamada11112000-code.github.io
+# وَقْف — Waqf
+
+صفحات عامة لتطبيقات وَقْف: سياسة الخصوصية وطلب حذف الحساب.
+كود التطبيقات نفسه ليس هنا.
+
+- قيراطان: [سياسة الخصوصية](https://hamada11112000-code.github.io/-Qiratan/privacy.html) · [حذف الحساب](https://hamada11112000-code.github.io/-Qiratan/delete-account.html)
+
+> النسخة الأصل للصفحتين في مستودع قيراطان (`docs/`). أي تعديل يُعمل هناك ثم يُنسخ هنا.
