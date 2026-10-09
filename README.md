@@ -1,0 +1,1 @@
+# hamada11112000-code.github.io
